@@ -143,6 +143,35 @@ header .container{
     object-fit: cover;
 }
 
+.card{
+    width: 70%;
+}
+
+#acao .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#acao .item{
+    background-color: lemonchiffon;
+    border: 3px ridge #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0 , 0 , 0 , 0.3);
+    transition: transform 0.2s ease, box-shadow 0,2s ease;
+    cursor: pointer;
+
+}
+
+#acao .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.4);
+}
+
+
 @media (max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
@@ -150,7 +179,7 @@ header .container{
     }
 
     nav ul{
-        margin-top: 10px;
+        margin-top: 10px;S
         flex-direction: column;
     }
     body{
