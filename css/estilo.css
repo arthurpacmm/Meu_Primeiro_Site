@@ -46,7 +46,8 @@ nav ul li a{
 }
 
 a:hover{
-    color: greenyellow;
+    color: black;
+    text-decoration: underline;
 }
 
 header .container{
@@ -90,7 +91,7 @@ header .container{
 .sobre-texto{
     flex: 1;
     text-align: justify;
-    line height: 1.5;
+    line-height: 1.5;
 }
 
 .sobre-texto h1{
@@ -119,7 +120,8 @@ header .container{
 }
 
 .sobre-texto a:hover{
-    color: greenyellow;
+    color: #007bff;
+    text-decoration: underline;
 }
 
 .hex-grid{
@@ -161,7 +163,7 @@ header .container{
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0 , 0 , 0 , 0.3);
-    transition: transform 0.2s ease, box-shadow 0,2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 
 }
@@ -171,6 +173,76 @@ header .container{
     box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.4);
 }
 
+.modal{
+    background-color: lemonchiffon;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0 , 0 , 0 , 0.1);
+    margin: auto;
+    text-align: center;
+}
+
+.card{
+    max-width: 300px;
+}
+
+#acao h3{
+    padding: 15px;
+}
+
+.card h3{
+    margin-top: 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba( 0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target{
+    display: flex;
+}
+
+.modal-content{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba( 0, 0, 0, 0.2);
+}
+
+.modal-content p{
+    padding: 5px;
+}
+
+.close-btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #dd3040;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
 
 @media (max-width:675px){
     header .container, .sobre-container{
@@ -179,7 +251,7 @@ header .container{
     }
 
     nav ul{
-        margin-top: 10px;S
+        margin-top: 10px;
         flex-direction: column;
     }
     body{
