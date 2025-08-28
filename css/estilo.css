@@ -366,6 +366,8 @@ h2{
   }
 
 
+  
+
 @media (max-width:1150px){
     .galeriafotos img {
         width: calc(50% - 20px);
@@ -387,6 +389,70 @@ h2{
         max-width: 300px;
         margin: auto;
     }
+}
+
+/* ====== formulário (novo) ====== */
+.form-contato{
+    margin: 24px auto 0;
+    background: #fffef0;
+    border: 3px ridge #000;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+}
+
+.form-contato .field-group{ display: flex; flex-direction: column; gap: 6px; }
+.form-contato label, .form-contato legend{ font-weight: 600; color: #2b2b2b; }
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato input[type="number"],
+.form-contato select,
+.form-contato textarea{
+    padding: 10px 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    outline: none;
+    background: #fff;
+}
+
+.range-line{ display:flex; align-items:center; gap:10px; }
+.form-contato textarea{ resize: vertical; }
+
+.form-contato fieldset{ border: 1px solid #c9c9c9; border-radius: 8px; padding: 10px 12px; }
+
+.form-contato .radio, .form-contato .checkbox{ display: inline-flex; align-items: center; gap: 6px; margin-right: 12px; }
+
+.form-contato .actions{ grid-column: 1 / -1; display: flex; justify-content: center; margin-top: 4px; }
+
+.btn{
+    display:inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+
+.ok-msg{
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #1b5e20;
+}
+
+/* responsivo */
+@media (max-width: 675px){
+    .form-contato{ grid-template-columns: 1fr; padding: 16px; }
 }
 
 
@@ -451,3 +517,4 @@ h2{
         white-space: nowrap;
       }
 }
+
