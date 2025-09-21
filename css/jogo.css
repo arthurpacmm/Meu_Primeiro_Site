@@ -6,13 +6,12 @@
   width: 100vw;
   height: 100vh;
 }
-
 /* área principal */
 #gamePage #gameArea {
   position: fixed;
   width: 99%;
   height: 100%;
-  background: url("../img/Jogo/Jogo.Background.png") no-repeat center/cover;
+  background: url("../img/jogo/jogo.background.png") no-repeat center/cover;
 }
 
 /* jogador */
@@ -21,7 +20,7 @@
   bottom: 20px;
   width: 60px;
   height: 60px;
-  background: url("../img/Jogo/Jogo.Tartaruga.png") no-repeat center/cover;
+  background: url("../img/jogo/jogo.tartaruga.png") no-repeat center/cover;
 }
 
 /* itens genéricos */
@@ -33,12 +32,12 @@
 
 /* comida */
 #gamePage .comida {
-  background: url("../img/Jogo/Jogo.Comida.png") no-repeat center/cover;
+  background: url("../img/jogo/jogo.comida.png") no-repeat center/cover;
 }
 
 /* lixo perigoso */
 #gamePage .lixoRuim {
-  background: url("../img/Jogo/Jogo.Lixo.png") no-repeat center/cover;
+  background: url("../img/jogo/jogo.lixo.png") no-repeat center/cover;
 }
 
 /* placar */
@@ -59,7 +58,7 @@
   left: 10px;
   display: flex;
 }
-#gamePage #vidas .coraçao {
+#gamePage #vidas .coracao {
   width: 30px;
   height: 30px;
   margin-right: 5px;
@@ -98,7 +97,7 @@
 
 /* ===== Overlay de bloqueio para mobile ===== */
 #unsupportedMobile{
-  display: none;               /* JS ou @media vão mostrar no mobile */
+  display: none;               
   position: fixed;
   inset: 0;
   width: 100vw;

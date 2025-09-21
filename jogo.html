@@ -34,9 +34,9 @@
 
       <!-- vidas (corações) -->
       <div id="vidas">
-        <img src="Img/Jogo/Jogo.Vida.png" class="coraçao" alt="vida">
-        <img src="Img/Jogo/Jogo.Vida.png" class="coraçao" alt="vida">
-        <img src="Img/Jogo/Jogo.Vida.png" class="coraçao" alt="vida">
+        <img src="img/jogo/jogo.vida.png" class="coracao" alt="vida">
+        <img src="img/jogo/jogo.vida.png" class="coracao" alt="vida">
+        <img src="img/jogo/jogo.vida.png" class="coracao" alt="vida">
       </div>
 
       <!-- botão de voltar -->
@@ -138,9 +138,9 @@
       function atualizarVidas() {
         vidasContainer.innerHTML = "";
         for (let i = 0; i < vidas; i++) {
-          const coracao = document.createElement("Img/Jogo/Jogo.Vida.png");
-          coracao.src = "Img/Jogo/Jogo.Vida.png";
-          coracao.classList.add("coraçao");
+          const coracao = document.createElement("img");
+          coracao.src = "img/jogo/jogo.vida.png";
+          coracao.classList.add("coracao");
           coracao.alt = "vida";
           vidasContainer.appendChild(coracao);
         }
